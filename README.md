@@ -1,9 +1,37 @@
-# xo_and_calculator
 
-A small Flutter project that contains two practice features: a Tic-Tac-Toe
-(XO) game and a simple calculator UI. This repository is intended as a
-learning/exercise project showcasing basic Flutter widgets, navigation, and
-simple state management.
+# xo_and_calculator — Overview
+
+xo_and_calculator is a compact Flutter sample app that demonstrates two small
+but complete features: a local multiplayer Tic-Tac-Toe (XO) game and a basic
+calculator UI. The project is intended for learning Flutter UI, simple
+state handling, and navigation between screens. It's self-contained and
+requires only the Flutter SDK to run.
+
+## Features
+
+- Tic-Tac-Toe (XO)
+	- Local two-player mode on one device.
+	- Game board UI built from reusable `XO` button widgets.
+	- Win/draw detection, visual indicators for winners, and board reset.
+	- Core logic and UI in `lib/xo_screen.dart` and `lib/widgets/xo_button.dart`.
+- Calculator
+	- Basic arithmetic operations (addition, subtraction, multiplication,
+		division) with a simple and responsive UI.
+	- Input handling and expression evaluation in `lib/calc_home_page.dart`.
+- Player / Registration
+	- Minimal registration screen to enter player names and simple in-memory
+		player handling in `lib/register_screen.dart` and `lib/users_player.dart`.
+
+## Project structure (important files)
+
+- `lib/main.dart` — App entry point and route setup.
+- `lib/xo_screen.dart` — Tic-Tac-Toe screen, UI and game logic.
+- `lib/calc_home_page.dart` — Calculator UI and logic.
+- `lib/register_screen.dart` — Player registration UI.
+- `lib/users_player.dart` — Simple in-memory player storage/helper.
+- `lib/models/user_model.dart` — Player/user model definition.
+- `lib/widgets/` — Reusable widgets (e.g., `xo_button.dart`, text field
+	wrappers).
 
 ## Repo structure (key files)
 
